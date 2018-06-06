@@ -63,7 +63,7 @@ iframe {
 }
 
 .bg-img-1 {
-  background: url("../images/bg1.jpg") center;
+  background: url("../images/sky.jpg") center;
   background-size: cover;
   position: relative;
 }
@@ -92,7 +92,7 @@ iframe {
   background: -ms-linear-gradient(#444F5C, #334159);
   background: -o-linear-gradient(#444F5C, #334159);
   background: linear-gradient(#444F5C, #334159);
-  opacity: 0.85;
+  opacity: 0;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -156,6 +156,11 @@ iframe {
 
 .text-muted {
   color: #97a0af !important;
+}
+
+.text-muted-sky {
+  color: white !important;
+  text-shadow: 1px 1px #202e7e;
 }
 
 .h2, h2 {
@@ -546,7 +551,8 @@ iframe {
 }
 
 .home-wrapper {
-  color: #374760;
+  color: white;
+  text-shadow: 1px 1px #202e7e;
   padding: 200px 0px 150px 0px;
 }
 
