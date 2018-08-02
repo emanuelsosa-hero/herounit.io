@@ -486,7 +486,23 @@
 
     <!--common script for all pages-->
     <script src="js/jquery.app.js"></script>
+    <script type="text/javascript">
+(function(w,d){
+  w.HelpCrunch=function(){w.HelpCrunch.q.push(arguments)};w.HelpCrunch.q=[];
+  function r(){var s=document.createElement('script');s.async=1;s.type='text/javascript';s.src='https://widget.helpcrunch.com/';(d.body||d.head).appendChild(s);}
+  if(w.attachEvent){w.attachEvent('onload',r)}else{w.addEventListener('load',r,false)}
+})(window, document)
+</script>
 
+<script type="text/javascript">
+  HelpCrunch('init', 'herounit', {
+    applicationId: 3565,
+    applicationSecret: '74yDC5RA+oB/VMY9ODKgReQhE+n+hLL8gcRM9Eg7npyUWkz8C4AHGG+Eq+yjQAvyJ9bbulmTop6bxWOsbREAGw=='
+  });
+
+  HelpCrunch('showChatWidget');
+</script>
+    
 </body>
 
 </html>
