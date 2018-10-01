@@ -11,39 +11,46 @@ html.no-js(lang='en')
 		link(rel='stylesheet', href='../node_modules/slick-carousel/slick/slick-theme.css')
 		script(src='../bower_components/jquery/dist/jquery.js')
 		script(src='../node_modules/feather-icons/dist/feather.js')
+		link(rel='shortcut icon', type='image/png', href='../pages/img/favicon.png')
+		meta(property='og:url', content='http://herounit.io')
+		meta(property='og:type', content='business.business')
+		meta(property='og:title', content='HeroUnit')
+		meta(property='og:description', content='Proactive software support and development based in Nashville')
+		meta(property='og:image', content='../pages/img/opengraph.png')
+
 		
 	body.page
 	
-	
-	.title-bar(data-responsive-toggle='topmenu', data-hide-for='large')
-		.menu-cont-mobile.grid-x
-			.cell.small-1
-				button.menu-icon(type='button', data-toggle='topmenu')
-					.title-bar-title
-						i.icon(data-feather="menu")
-			.cell.small-11.text-center
-				h1.logo
-					span: a(href="#") HeroUnit
-
-	
-	.nav.main-navigation
-		#topmenu.top-bar
-			.top-bar-left
-				.menu-text
+		
+		.title-bar(data-responsive-toggle='topmenu', data-hide-for='large')
+			.menu-cont-mobile.grid-x
+				.cell.small-1
+					button.menu-icon(type='button', data-toggle='topmenu')
+						.title-bar-title
+							i.icon(data-feather="menu")
+				.cell.small-11.text-center
 					h1.logo
 						span: a(href="#") HeroUnit
-				ul.dropdown.menu(data-dropdown-menu='')
-					li
-						a(href='#services') Services
-					li
-						a(href='#whyus') Why Us?
-					li
-						a(href='#about') About
-					li
-						a(href='#contact') Contact
-					li
-						a(href='http://awkwardcoder.com/',target='_blank') Blog
-					li.hide-for-small-only
-						a.button.primary(href='#',data-open='contactform') Quote
-			.top-bar-right
-				// spaceholder
+
+		
+		.nav.main-navigation
+			#topmenu.top-bar
+				.top-bar-left
+					.menu-text
+						h1.logo
+							span: a(href="#") HeroUnit
+					ul.dropdown.menu(data-dropdown-menu='')
+						li
+							a(href='#services') Services
+						li
+							a(href='#whyus') Why Us?
+						li
+							a(href='#about') About
+						li
+							a(href='#contact') Contact
+						li
+							a(href='http://awkwardcoder.com/',target='_blank') Blog
+						li.hide-for-small-only
+							a.button.primary(href='#',data-open='contactform') Quote
+				.top-bar-right
+					// spaceholder

@@ -73,6 +73,12 @@ a:hover {
 
 // Top Bar
 
+.main-navigation {
+	@include breakpoint(medium) {
+	height: 180px;
+}
+}
+
 .title-bar {
 	background-color: #fff;
 	color: #000;
@@ -189,6 +195,19 @@ h1.logo {
 	}
 }
 
+// forms
+
+label {
+	font-weight: 800;
+
+}
+
+input,select {
+	border: none !important;
+	border-bottom: solid 1px #000 !important;
+	box-shadow: none !important;
+}
+
 
 // Welcome Banner
 
@@ -198,7 +217,7 @@ h1.logo {
 	display: flex;
 
 	@include breakpoint(medium) {
-		height: 86vh;
+		height: 69vh;
 		align-items: center;
 	  justify-content: center;
 	}
@@ -377,11 +396,25 @@ h1.logo {
 
 footer {
 	background-color: #06202F;
-	height: 20vh;
+	height: 30vh;
 	color: #fff;
-	padding: 20px;
+	padding: 12vh 0;
 	position: relative;
 	top: -2px;
+	a {
+		color: #a2d9f9 !important;
+
+	}
+	.social-links {
+		list-style: none;
+		li {
+			display: inline-block;
+			a {
+				padding: 8px 20px;
+				color: #fff;
+			}
+		}
+	}
 }
 
 
@@ -389,6 +422,15 @@ footer {
 
 #contactform {
 	padding: 50px;
+}
+
+.contactbox {
+	.icon {
+		opacity: 0.6;
+		margin-right: 16px;
+    position: relative;
+    top: 7px;
+	}
 }
 
 // Utilities
