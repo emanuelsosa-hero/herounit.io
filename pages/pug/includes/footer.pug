@@ -1,0 +1,69 @@
+
+
+#contact.contact-footer.section
+	.section-head.text-center
+		h2 Get in Touch
+		h4 How can we save your world today?
+	.grid-x.grid-margin-x
+		.cell.small-6.text-right
+			a.button(href="#",data-open='contactform') Request a Quote
+		.cell.small-6.text-left
+			a.button.hollow.primary(href="#",data-open='contactform') Drop us a Line
+
+
+
+
+
+footer
+	p HeroUnit is a branch of AcklenAvenue
+	p All Rights Reserved 2018
+
+script.
+	feather.replace()
+
+//script.
+	$(document).ready(function(){
+		$('.staff-carousel').slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 2000,
+		});
+	});
+
+
+script.
+	document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+					e.preventDefault();
+
+					document.querySelector(this.getAttribute('href')).scrollIntoView({
+							behavior: 'smooth'
+					});
+			});
+	});
+	
+	
+	
+script.
+	(function($) {          
+	    $(document).ready(function(){                    
+	        $(window).scroll(function(){                          
+	            if ($(this).scrollTop() > 900) {
+	                $('.top-bar').addClass( "stacked" );
+	            } else {
+	                $('.top-bar').removeClass( "stacked" );
+	            }
+	        });
+	    });
+	})(jQuery);
+
+
+
+
+script(src='../bower_components/jquery/dist/jquery.js')
+script(src='../bower_components/what-input/dist/what-input.js')
+script(src='../node_modules/slick-carousel/slick/slick.min.js')
+script(src='../bower_components/foundation-sites/dist/js/foundation.js')
+script(src='../bower_components/foundation-sites/dist/js/plugins/foundation.equalizer.js')
+script(src='../js/app.js')
