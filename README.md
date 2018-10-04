@@ -1,4 +1,3 @@
-
 # HeroUnit Website
 
 Based on Foundation with SASS and PUG.
@@ -7,9 +6,8 @@ Based on Foundation with SASS and PUG.
 
 docs/
 
-
-
 ## Requierements:
+
 - Node.js [link](https://nodejs.org/en/)
 - NPM [link](https://www.npmjs.com/get-npm?utm_source=house&utm_medium=homepage&utm_campaign=free%20orgs&utm_term=Install%20npm)
 - Foundation CLI [link](https://www.npmjs.com/package/foundation-cli)
@@ -20,27 +18,37 @@ docs/
 ## Instalation
 
 To install the NPM components and Foundation grid first time:
+
 ```bash
 npm install
 ```
 
 To install the Bower components and Foundation grid first time:
+
 ```bash
 bower install
 ```
 
+## Deploy
+
+Build and deploy to Github Pages:
+
+```bash
+npm run deploy
+```
 
 ## Usage
 
 To compile SASS (and PUG) files, run:
+
 ```bash
 npm start
 ```
+
 Source folder for SASS files:
 SCSS/
 Source folder for PUG Files:
 PUG/
-
 
 ## SASS Structure
 
@@ -62,13 +70,11 @@ https://foundation.zurb.com/sites/docs/xy-grid.html
 FOundation MOTION UI:
 https://zurb.com/playground/motion-ui
 
-
 SASS:
 http://sass-lang.com/guide
 
 Pug Reference:
 https://pugjs.org/api/getting-started.html
-
 
 **Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
