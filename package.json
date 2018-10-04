@@ -13,7 +13,7 @@
     "start": "gulp",
     "build": "gulp sass",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d pages"
   },
   "repository": {
     "type": "git",
