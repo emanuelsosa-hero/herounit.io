@@ -44,7 +44,7 @@ h5 {
 
 a:link,a:visited {
 	//font-weight: 600;
-	color: #737373;
+	color: $secondary-color;
 }
 
 a:hover {
@@ -56,6 +56,13 @@ a:hover {
 	margin-bottom: 50px;
 }
 
+.icon-left {
+	width: 15px;
+  position: relative;
+  top: 7px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
 
 // buttons
 
@@ -279,11 +286,28 @@ input,select {
 
 // services
 
+.services-list {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+
+.card-service {
+
+	h5 {
+		font-size: 0.96em;
+	}
+}
+
+
+
 .serv-picture {
 	background-repeat: no-repeat;
 	background-size: contain;
-	width: 100%;
-	height: 220px;
+	width: 90%;
+	margin: auto;
+	height: 140px;
+	background-position: center;
 }
 
 .serv-picture.sp1 {
@@ -305,12 +329,51 @@ input,select {
 	background-image: url(../img/illu-services-06.png);
 }
 
+.table-services {
+	max-width: 1100px;
+	margin: 0 auto 80px auto;
+	.icon-red {
+		color: $primary-color;
+	}
+	td,th {
+		text-align: center;
+	}
+	th.col-gold {
+		background-color: #1B85DC;
+	}
+	thead {
+		background-color: $secondary-color;
+		height: 100px;
+		th {
+			height: 85px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+		.head-service {
+			background-color: #e8e8e8;
+			color: #000;
+			width: 45%;
+			text-align: left;
+		}
+	}
+	td.text-left {
+		text-align: left;
+	}
+	h6 {
+		font-size: 0.92em;
+	}
+	p {
+		color: #646464;
+		font-size: 0.88em;
+	}
+}
+
+
 
 // technologies
 
 
 #technologies {
-	border-top: dotted 1px #ccc;
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
