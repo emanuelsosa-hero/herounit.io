@@ -1,0 +1,256 @@
+include includes/header.pug
+	
+	
+.welcome-container.margin-bottom-big
+	.grid-x.grid-margin-y
+		.cell.small-6.medium-6.welcome-text
+			h2.welcome-title.margin-bottom-small Your Proactive Support Superhero.
+			.welcome-description
+				p.margin-bottom-small Focus on your business while we focus on your software. Whether you need a full-stack development team to develop your dream from scratch, or a proactive team of experts ready to provide support and mantainance, HeroUnit is the superhero you can rely on!
+			.buttongroup.hide-for-small-only
+				button.button.secondary(href="#",data-open='contactform') Request a Quote
+				a.button.clear.secondary(href="#services") Learn More
+		
+		.cell.small-6.medium-6: .welcome-graphic
+			// Illustration Placeholder
+
+#services.section.grid-container
+	.section-head.text-center
+		h2 Our services
+		h4 Or Should we say Our Super Powers?
+	.services-list.grid-x.grid-margin-y.grid-margin-x
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp1
+			h5 24/7 Proactive Support
+					
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp3
+			h5 Web Development
+				
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp5
+			h5 DevOps
+					
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp2
+			h5 Mobile App Development
+			
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp4
+			h5 Back-end Development
+
+		.card-service.cell.small-6.medium-2.text-center
+			.serv-picture.sp6
+			h5 Project Management
+			
+	table.table-services.unstriped
+		thead
+			tr
+				th.head-service Service
+				th Basic
+				th Premium
+				th.col-gold
+					i.icon.icon-left(data-feather="star")
+					| Gold
+		tbody
+			tr
+				td.text-left 
+					h6 Included Credits Per Month
+				td 40
+				td 80
+				td 120
+			tr
+				td.text-left 
+					h6 Free Ramp-U
+				td 1 Week
+				td 1 Week
+				td 1 Week
+			tr
+				td.text-left
+					h6 Development
+					p Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Operations
+					p Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Testing
+					p Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Design
+					p Development Assets, Logo design/updates, Prototyping.
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left(colspan='4') 
+					h5 Additional Offerings:
+			tr
+				td.text-left
+					h6 Transparency Tools
+					p Access to Issue Management Tools, Access to Team Chat, Monthly Report of Work Done
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Monitoring
+					p Infrastructure Costs, Performance, Database Server Status, Web Server Status, 3rd Party Integration Status, Application Usage, SEO Ranking.
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Strategy
+					p SEO Optimization, Ongoing Backlog Review
+				td
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Health
+					p Upgrade packages for minor version updates and security patches, Increase test coverage.
+				td
+				td: i.icon.icon-red(data-feather="check")
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Advisory
+					p Monthly CTO Calls, Product Manager Calls
+				td
+				td 2 call per month
+				td 6 call per month
+			tr
+				td.text-left
+					h6 Operations
+					p Domain name and hosting maintenance and renewal, Upgrades & changes to integrations, platforms, OSs and Scheduled offsite backups
+				td
+				td
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Fully Alocated Team
+					p Principled Developers,,Tenacious Software Testers
+				td
+				td
+				td: i.icon.icon-red(data-feather="check")
+			tr
+				td.text-left
+					h6 Monthly Rate
+				td
+					a#requestlink(href="#",data-open="contactform")
+						i.icon.icon-left(data-feather="mail")
+						| Request
+				td
+					a#requestlink(href="#",data-open="contactform")
+						i.icon.icon-left(data-feather="mail")
+						| Request
+				td
+					a#requestlink(href="#",data-open="contactform")
+						i.icon.icon-left(data-feather="mail")
+						| Request
+
+					
+
+#technologies.section.grid-container.margin-bottom-big
+	.grid-x.grid-margin-y.grid-margin-x
+		.technologies-logos
+
+#whyus.section.grid-container.margin-bottom-big
+	.section-head.text-center
+		h2 Why HeroUnit?
+		h4 (Basically, not everyone else can be a hero)
+	.grid-x.grid-margin-y.grid-margin-x
+		.cell.small-6
+			.illu-whyus
+		.cell.small-6
+			.text-group.margin-bottom-big
+				h6.checked Team-work philosophy
+				p We work as a team. With very few exceptions, there are always at least two heroes working together to solve your problems, this way we can share knowledge and prevent silos, and also keep our heroes focused and accountable. 
+				
+			.text-group.margin-bottom-big
+				h6.checked Emergency (Proactive) Support
+				p While your team handles customer-level support, we’ll be ready to handle the toughest engineering-level issues. When you’re in a jam, Hero Unit is ready just in time. 
+			
+			.text-group.margin-bottom-big
+				h6.checked Credit-based maintenance
+				p Your team will follow your lead, spending credits from your bucket each month. It’s up to you what they work on. Your credits do not roll-over, so it is to your advantage to prioritize code improvements when bug/feature load is light.
+				
+			.text-group.margin-bottom-big
+				h6.checked Complementary Services
+				p In addition to the work you decide the team will perform, the Hero Unit team will also take it upon themselves to ensure your application is constantly improving using various tools and methods depending on your level of support.
+
+
+
+
+#about.section.grid-container.margin-bottom-big
+	.section-head.text-center
+		h2 About HeroUnit
+		h4 Our true identity is not a secret for you!
+	.grid-x.grid-margin-y.grid-margin-x
+		.cell.small-12.medium-5
+			.about-photo
+		.cell.small-12.medium-7
+			p Byron Sommardahl, the founder of HeroUnit, has lived with one foot in Nashville, TN and another foot in Honduras since 2010. Byron and his partners at Acklen Avenue Software discovered immense and mostly unnoticed technical talent in Latin America and especially in Honduras! That talent is what drives both Acklen Avenue and HeroUnit today.
+			p Honduras and Nashville are in the same time-zone and is just about 4 hours away by plane, these are some of the facts that help us keep our business growing up together with satisfied clients since 2010!
+
+
+
+
+
+//#staff.section
+	.section-head.text-center.margin-bottom-big
+		h2 The Staff
+		h4 (“Staff” is our short way to say “superhero alliance”)
+	.staff-carousel.row.small-up-2.medium-up-3.large-up-4
+		.card-staff.column.column-block
+			.staff-photo
+			.staff-info
+				h6 Fulano Mengano
+				p Superpower:
+				strong Beautiful coding for frontend
+
+		.card-staff.column.column-block
+			.staff-photo
+			.staff-info
+				h6 Fulano Mengano
+				p Superpower:
+				strong Beautiful coding for frontend
+
+		.card-staff.column.column-block
+			.staff-photo
+			.staff-info
+				h6 Fulano Mengano
+				p Superpower:
+				strong Beautiful coding for frontend
+
+		.card-staff.column.column-block
+			.staff-photo
+			.staff-info
+				h6 Fulano Mengano
+				p Superpower:
+				strong Beautiful coding for frontend
+
+
+#contactform.reveal.small.text-center(data-reveal='')
+	h1 Get in Touch
+	p We want to hear from you! Please feel free to request a custom quote for your product or project and we'll happy to assist you.
+	h4 info@herounit.io
+	h6 (615) 988-4700
+	button.close-button(data-close='', aria-label='Close modal', type='button')
+		span(aria-hidden='true') ×
+
+
+
+include includes/footer.pug
