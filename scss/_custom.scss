@@ -288,7 +288,7 @@ input,select {
 
 .services-list {
 	clear: both;
-	margin-bottom: 50px;
+	//margin-bottom: 20px;
 }
 
 
@@ -300,6 +300,20 @@ input,select {
 }
 
 
+.requestlink {
+	padding: 10px;
+	height: 55px;
+	width: 90%;
+	@include breakpoint(medium down) {
+		padding: 0;
+		border: 0 !important;
+		height: auto;
+		.icon {
+			display: none;
+
+		}
+	}
+}
 
 .serv-picture {
 	background-repeat: no-repeat;
@@ -331,7 +345,7 @@ input,select {
 
 .table-services {
 	max-width: 1100px;
-	margin: 0 auto 80px auto;
+	margin: 0 auto 40px auto;
 	.icon-red {
 		color: $primary-color;
 	}
@@ -368,13 +382,26 @@ input,select {
 	}
 }
 
+.additional-button {
+	color: $secondary-color;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	line-height: 30px;
+	display: block;
+	.icon {
+		position: relative;
+		top: 8px;
+	}
+}
+
 
 
 // technologies
 
 
 #technologies {
-	padding-top: 40px;
+	padding-top: 85px;
 	padding-bottom: 20px;
 }
 

@@ -473,6 +473,33 @@
     $('#contactform').foundation('reveal', 'open');
   });
 </script>
+<script>
+  $('#more1').css(
+  {
+    height: '33px',
+    overflow: 'hidden'
+  });
+  $('#more1').on('click', function()
+  {
+    var $this = $(this);
+    if ($this.data('open'))
+    {
+      $this.animate(
+      {
+        height: '33px'
+      });
+      $this.data('open', 0);
+    }
+    else
+    {
+      $this.animate(
+      {
+        height: '100%'
+      });
+      $this.data('open', 1);
+    }
+  })
+</script>
 <script src="../bower_components/jquery/dist/jquery.js"></script>
 <script src="../bower_components/what-input/dist/what-input.js"></script>
 <script src="../node_modules/slick-carousel/slick/slick.min.js"></script>

@@ -43,61 +43,80 @@ include includes/header.pug
 			.serv-picture.sp6
 			h5 Project Management
 			
-	table.table-services.unstriped
-		thead
+		table.table-services.unstriped
+			thead
+				tr
+					th.head-service Service
+					th Basic
+					th Premium
+					th.col-gold
+						i.icon.icon-left(data-feather="star")
+						| Gold
+			tbody
+				tr
+					td.text-left 
+						h6 Included Credits Per Month
+					td 40
+					td 80
+					td 120
+				tr
+					td.text-left 
+						h6 Free Ramp-U
+					td 1 Week
+					td 1 Week
+					td 1 Week
+				tr
+					td.text-left
+						h6 Development
+						p Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+				tr
+					td.text-left
+						h6 Operations
+						p Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+				tr
+					td.text-left
+						h6 Testing
+						p Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+				tr
+					td.text-left
+						h6 Design
+						p Development Assets, Logo design/updates, Prototyping.
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+					td: i.icon.icon-red(data-feather="check")
+				tr
+					td.text-left
+						h6 Monthly Rate
+					td
+						a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
+							i.icon.icon-left(data-feather="mail")
+							| Request
+					td
+						a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
+							i.icon.icon-left(data-feather="mail")
+							| Request
+					td
+						a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
+							i.icon.icon-left(data-feather="mail")
+							| Request
+
+				
+	#more1.more1.margin-bottom-big
+		a.text-center.additional-button
+			| Show me Additional Offerings
+			i.icon.icon-red(data-feather="chevron-down")
+		table.table-services.unstriped
 			tr
-				th.head-service Service
-				th Basic
-				th Premium
-				th.col-gold
-					i.icon.icon-left(data-feather="star")
-					| Gold
-		tbody
-			tr
-				td.text-left 
-					h6 Included Credits Per Month
-				td 40
-				td 80
-				td 120
-			tr
-				td.text-left 
-					h6 Free Ramp-U
-				td 1 Week
-				td 1 Week
-				td 1 Week
-			tr
-				td.text-left
-					h6 Development
-					p Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Operations
-					p Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Testing
-					p Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Design
-					p Development Assets, Logo design/updates, Prototyping.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left(colspan='4') 
-					h5 Additional Offerings:
-			tr
-				td.text-left
+				td.text-left(style="width: 46%")
 					h6 Transparency Tools
 					p Access to Issue Management Tools, Access to Team Chat, Monthly Report of Work Done
 				td: i.icon.icon-red(data-feather="check")
@@ -149,19 +168,19 @@ include includes/header.pug
 				td.text-left
 					h6 Monthly Rate
 				td
-					a#requestlink(href="#",data-open="contactform")
+					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
 						i.icon.icon-left(data-feather="mail")
 						| Request
 				td
-					a#requestlink(href="#",data-open="contactform")
+					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
 						i.icon.icon-left(data-feather="mail")
 						| Request
 				td
-					a#requestlink(href="#",data-open="contactform")
+					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
 						i.icon.icon-left(data-feather="mail")
 						| Request
 
-					
+						
 
 #technologies.section.grid-container.margin-bottom-big
 	.grid-x.grid-margin-y.grid-margin-x
