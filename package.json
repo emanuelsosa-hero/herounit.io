@@ -33,7 +33,8 @@
     "gulp-autoprefixer": "^3.1.0",
     "gulp-prettify": "^0.5.0",
     "gulp-pug": "^3.3.0",
-    "pug": "^2.0.0-rc.4",
+    "motion-ui": "^2.0.3",
+    "pug": "^2.0.3",
     "slick-carousel": "^1.8.1"
   }
 }
