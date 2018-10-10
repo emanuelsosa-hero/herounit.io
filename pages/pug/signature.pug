@@ -24,6 +24,7 @@ html.no-js(lang='en')
 				width: 400px;
 				border: solid 1px #ccc;
 				padding: 28px;
+				border-radius: 7px;
 			}
 			
 			h2 {
@@ -46,11 +47,26 @@ html.no-js(lang='en')
 				border: 0;
 				text-align: center;
 			}
+			
+			.instructions {
+				text-align: center;
+				font-size: 0.9em;
+				line-height: 12px;
+				margin: 40px 0;
+				color: #6b6b6b;
+			}
 
 		
 	body
 	
 		h2 HeroUnit Email Signature Template
+		.instructions
+			p Please copy & paste, if you need help you can follow
+			| 
+			a(href="https://support.google.com/mail/answer/8395?hl=es&authuser=0") gmail instructions 
+			| 
+			| to change your email signature.
+
 		.table-container#tableID
 			table(cellspacing='0', width='400', cellpadding='0', border='0', style='box-sizing:border-box;border-spacing:0px;border-collapse:collapse;color:rgb(51,51,51);font-family:Muli,sans-serif;font-size:13px')
 				tbody(style='box-sizing:border-box')
@@ -82,11 +98,11 @@ html.no-js(lang='en')
 											br
 									tr(style='box-sizing:border-box')
 										td(style='box-sizing:border-box;padding:8px 0px 0px')
-											i(style='color:rgb(102,102,102);font-family:Verdana,Geneva,sans-serif;font-size:11.7px') Beautiful Functionality
+											i(style='color:rgb(102,102,102);font-family:Verdana,Geneva,sans-serif;font-size:11.7px') Just in the nick of time!
 											br
 		.copybutton
 			input#btncopy.btn(type='button', value='Copy to clipboard', onclick="copy('#tableID')")
-
+	
 
 	
 	
