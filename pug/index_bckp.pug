@@ -18,150 +18,54 @@ include includes/header.pug
 	.section-head.text-center
 		h2 Our services
 		h4 Or Should we say Our Super Powers?
-	.services-list.grid-x.grid-margin-y.grid-margin-x
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp1
-			h5 24/7 Proactive Support
+	.grid-x.grid-margin-y.grid-margin-x
+		.cell.small-12.medium-6
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp1
+				.cell.small-8
+					h5 24/7 Proactive Support
+					p While your team handles customer-level support, we’ll be ready to handle the toughest engineering-level issues. When you’re in a jam, Hero Unit is ready just in time. 
 					
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp3
-			h5 Web Development
-				
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp5
-			h5 DevOps
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp3
+				.cell.small-8
+					h5 Web Development
+					p We love to develop and deliver web front-ends using React, Vue.JS or Angular.
 					
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp2
-			h5 Mobile App Development
-			
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp4
-			h5 Back-end Development
-
-		.card-service.cell.small-6.medium-2.text-center
-			.serv-picture.sp6
-			h5 Project Management
-			
-	table.table-services.unstriped
-		thead
-			tr
-				th.head-service Service
-				th Basic
-				th Premium
-				th.col-gold
-					i.icon.icon-left(data-feather="star")
-					| Gold
-		tbody
-			tr
-				td.text-left 
-					h6 Included Credits Per Month
-				td 40
-				td 80
-				td 120
-			tr
-				td.text-left 
-					h6 Free Ramp-U
-				td 1 Week
-				td 1 Week
-				td 1 Week
-			tr
-				td.text-left
-					h6 Development
-					p Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Operations
-					p Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Testing
-					p Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Design
-					p Development Assets, Logo design/updates, Prototyping.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left(colspan='4') 
-					h5 Additional Offerings:
-			tr
-				td.text-left
-					h6 Transparency Tools
-					p Access to Issue Management Tools, Access to Team Chat, Monthly Report of Work Done
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Monitoring
-					p Infrastructure Costs, Performance, Database Server Status, Web Server Status, 3rd Party Integration Status, Application Usage, SEO Ranking.
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Strategy
-					p SEO Optimization, Ongoing Backlog Review
-				td
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Health
-					p Upgrade packages for minor version updates and security patches, Increase test coverage.
-				td
-				td: i.icon.icon-red(data-feather="check")
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Advisory
-					p Monthly CTO Calls, Product Manager Calls
-				td
-				td 2 call per month
-				td 6 call per month
-			tr
-				td.text-left
-					h6 Operations
-					p Domain name and hosting maintenance and renewal, Upgrades & changes to integrations, platforms, OSs and Scheduled offsite backups
-				td
-				td
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Fully Alocated Team
-					p Principled Developers,,Tenacious Software Testers
-				td
-				td
-				td: i.icon.icon-red(data-feather="check")
-			tr
-				td.text-left
-					h6 Monthly Rate
-				td
-					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
-				td
-					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
-				td
-					a.requestlink.button.hollow.secondary(href="#",data-open="contactform")
-						i.icon.icon-left(data-feather="mail")
-						| Request
+					
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp5
+				.cell.small-8
+					h5 DevOps
+					p We are experts in creating devops culture and deploying great software using Docker and the AWS platform.
 
 
+					
+		.cell.small-12.medium-6
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp2
+				.cell.small-8
+					h5 Mobile App Development
+					p Our developers can handle anything you throw at them with either, Swift, Obj-C, React Native for iOS front-ends. Java, Kotlin or React Native for Android front-ends.
+					
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp4
+				.cell.small-8
+					h5 Back-end Development
+					p Back-end work is a breeze with either Python, Javascript (Node.js), or C# (Asp.net Core).
+					
+					
+			.card-service.grid-x
+				.cell.small-4
+					.serv-picture.sp6
+				.cell.small-8
+					h5 Project Management
+					p We don't handle full team or project management at HeroUnit, but our sister company, Acklen Avenue does!
 					
 
 #technologies.section.grid-container.margin-bottom-big
