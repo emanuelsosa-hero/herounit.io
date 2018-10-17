@@ -1,0 +1,493 @@
+// Include custom variables for website or app here
+
+// Google Fonts
+
+@import url('https://fonts.googleapis.com/css?family=Cabin|Oswald:400,500,600,700');
+
+// Include specific styles for website or app here
+
+//General
+
+body {
+  background-color: $body-background;
+  font-family: 'Cabin', sans-serif;
+}
+
+.page {
+  width: 99vw;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  text-transform: none;
+  font-family: 'Cabin', sans-serif;
+}
+
+h4 {
+  color: $dark-gray;
+}
+
+h5 {
+  color: $secondary-color;
+}
+
+a:link,
+a:visited {
+  //font-weight: 600;
+  color: $secondary-color;
+}
+
+a:hover {
+  color: #000;
+}
+
+.section-head {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.icon-left {
+  width: 15px;
+  position: relative;
+  top: 7px;
+  opacity: 0.5;
+  margin-right: 5px;
+}
+
+// buttons
+
+.button {
+  border-radius: 30px;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.button.primary,
+.button.secondary {
+  color: $white;
+}
+
+// Top Bar
+
+.main-navigation {
+  @include breakpoint(medium) {
+    height: 180px;
+  }
+}
+
+.title-bar {
+  background-color: #fff;
+  color: #000;
+  @include breakpoint(medium down) {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+    height: 55px;
+    padding: 8px 5px;
+  }
+}
+
+.menu-cont-mobile {
+  width: 96%;
+  h1.logo {
+    margin: auto;
+    width: 100px;
+    height: 30px;
+  }
+}
+
+.top-bar.stacked {
+  background-color: #fff !important;
+  position: fixed;
+  height: 110px;
+  top: 0;
+}
+
+.top-bar,
+.top-bar ul {
+  background-color: transparent !important;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 998;
+
+  h1.logo {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+  }
+
+  .dropdown.menu {
+    margin-top: 15px;
+    position: absolute;
+    left: 220px;
+    top: 18px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    a {
+      padding: 20px;
+      color: #000;
+    }
+    a.button {
+      color: #fff;
+      font-family: 'Cabin', sans-serif;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    position: fixed;
+    width: 100%;
+    top: 35px;
+    left: 0;
+    padding: 20px;
+  }
+}
+
+h1.logo {
+  background-image: url('../src/img/logo-main.svg');
+  width: 175px;
+  height: 46px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  span {
+    display: none;
+  }
+}
+
+#topmenu {
+  @include breakpoint(medium down) {
+    background-color: #fff !important;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 99999999;
+    top: 55px;
+    height: calc(100vh - 55px);
+    .logo {
+      display: none;
+    }
+    .menu {
+      left: 0;
+      width: 100%;
+      ul {
+        width: 100%;
+      }
+      li {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// forms
+
+label {
+  font-weight: 800;
+}
+
+input,
+select {
+  border: none !important;
+  border-bottom: solid 1px #000 !important;
+  box-shadow: none !important;
+}
+
+// Welcome Banner
+
+.welcome-container {
+  height: 110vh;
+  display: flex;
+
+  @include breakpoint(medium) {
+    height: 69vh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome-text {
+    //@include flex-align(null, center);
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    position: relative;
+    z-index: 1;
+    padding-left: 8%;
+    margin-top: 20vh;
+    @include breakpoint(medium) {
+      padding-left: 5%;
+      font-size: 1.2em;
+      margin-top: 0;
+    }
+  }
+  h2.welcome-title {
+    font-size: 3em;
+  }
+
+  .welcome-description {
+    position: absolute;
+    top: 50vh;
+    width: 85vw;
+    text-align: justify;
+    font-size: 1.26em;
+    @include breakpoint(medium) {
+      position: static;
+      top: auto;
+      text-align: left;
+      font-size: 1em;
+      width: 100%;
+    }
+  }
+
+  .welcome-graphic {
+    background-image: url(../src/img/hero-welcome-1.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 84vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 49%;
+    z-index: 0;
+    //height: 78vh !important;
+    @include breakpoint(medium down) {
+      height: 64vh;
+      width: 50%;
+      top: 0;
+    }
+  }
+}
+
+// services
+
+.services-list {
+  clear: both;
+  margin-bottom: 50px;
+}
+
+.card-service {
+  h5 {
+    font-size: 0.96em;
+  }
+}
+
+.serv-picture {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 90%;
+  margin: auto;
+  height: 140px;
+  background-position: center;
+}
+
+.serv-picture.sp1 {
+  background-image: url(../src/img/illu-services-01.png);
+}
+.serv-picture.sp2 {
+  background-image: url(../src/img/illu-services-02.png);
+}
+.serv-picture.sp3 {
+  background-image: url(../src/img/illu-services-03.png);
+}
+.serv-picture.sp4 {
+  background-image: url(../src/img/illu-services-04.png);
+}
+.serv-picture.sp5 {
+  background-image: url(../src/img/illu-services-05.png);
+}
+.serv-picture.sp6 {
+  background-image: url(../src/img/illu-services-06.png);
+}
+
+.table-services {
+  max-width: 1100px;
+  margin: 0 auto 80px auto;
+  .icon-red {
+    color: $primary-color;
+  }
+  td,
+  th {
+    text-align: center;
+  }
+  th.col-gold {
+    background-color: #1b85dc;
+  }
+  thead {
+    background-color: $secondary-color;
+    height: 100px;
+    th {
+      height: 85px;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .head-service {
+      background-color: #e8e8e8;
+      color: #000;
+      width: 45%;
+      text-align: left;
+    }
+  }
+  td.text-left {
+    text-align: left;
+  }
+  h6 {
+    font-size: 0.92em;
+  }
+  p {
+    color: #646464;
+    font-size: 0.88em;
+  }
+}
+
+// technologies
+
+#technologies {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.technologies-logos {
+  width: 90%;
+  max-width: 820px;
+  margin: auto;
+  background-image: url(../src/img/technologies-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height: 300px;
+  background-color: #fff;
+  background-blend-mode: luminosity;
+  transition: background-blend-mode 0.5s ease-out;
+  @include breakpoint(medium) {
+    background-image: url(../src/img/technologies-desktop.png);
+    height: 230px;
+    width: 94%;
+    margin: auto;
+  }
+}
+
+.technologies-logos:hover {
+  background-blend-mode: normal;
+}
+
+// why us
+
+.illu-whyus {
+  background-image: url(../src/img/illu-whyus.png);
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: top right;
+  position: relative;
+  left: -5%;
+  width: 100%;
+  height: 400px;
+  @include breakpoint(medium) {
+    height: 660px;
+    background-size: contain;
+    position: static;
+    left: 0;
+  }
+}
+
+// staff
+
+//about
+
+.about-photo {
+  background-image: url(../src/img/about.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
+  background-position: center;
+  width: 100%;
+  height: 280px;
+}
+
+// footer
+
+.contact-footer {
+  background-image: url(../src/img/footer-bg-desktop.svg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #fff;
+  height: 90vh;
+  padding-top: 15%;
+  h2,
+  h4,
+  a.button {
+    color: #fff;
+  }
+  .button.hollow {
+    border-color: #fff;
+    color: #fff;
+  }
+}
+
+footer {
+  background-color: #06202f;
+  height: 30vh;
+  color: #fff;
+  padding: 12vh 0;
+  position: relative;
+  top: -2px;
+  a {
+    color: #a2d9f9 !important;
+  }
+  .social-links {
+    list-style: none;
+    li {
+      display: inline-block;
+      a {
+        padding: 8px 20px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+//contact Form
+
+#contactform {
+  padding: 50px;
+}
+
+.contactbox {
+  .icon {
+    opacity: 0.6;
+    margin-right: 16px;
+    position: relative;
+    top: 7px;
+  }
+}
+
+// Utilities
+
+.margin-bottom-small {
+  margin-bottom: 25px;
+  clear: both;
+}
+
+.margin-bottom-big {
+  margin-bottom: 50px;
+  clear: both;
+}
