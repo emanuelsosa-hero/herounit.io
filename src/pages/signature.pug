@@ -1,0 +1,121 @@
+
+doctype html
+html.no-js(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='x-ua-compatible', content='ie=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1.0')
+		title Email Signature Template | HeroUnit
+		//link(rel='stylesheet', href='css/app.css')
+		link(rel='shortcut icon', type='image/png', href='src/img/favicon.png')
+		meta(property='og:url', content='http://herounit.io')
+		meta(property='og:type', content='business.business')
+		meta(property='og:title', content='HeroUnit')
+		meta(property='og:description', content='Proactive software support and development based in Nashville')
+		meta(name='robots', content='nofollow')
+		style.
+			@import url('https://fonts.googleapis.com/css?family=Cabin:400,600,700');
+			body {
+				font-family: 'cabin', sans-serif;
+			}
+			
+			.table-container {
+				margin: auto;
+				width: 400px;
+				border: solid 1px #ccc;
+				padding: 28px;
+				border-radius: 7px;
+			}
+			
+			h2 {
+				text-align: center;
+				margin: 80px auto 60px auto;
+				font-weight: 200;
+				text-transform: uppercase;
+			}
+			
+			.copybutton {
+				text-align: center;
+				width: 100%;
+				margin-top: 40px;
+			}
+			.copybutton .btn {
+				margin: auto;
+				background-color: #1962BA;
+				color: #fff;
+				padding: 15px 40px;
+				border: 0;
+				text-align: center;
+			}
+			
+			.instructions {
+				text-align: center;
+				font-size: 0.9em;
+				line-height: 12px;
+				margin: 40px 0;
+				color: #6b6b6b;
+			}
+
+		
+	body
+	
+		h2 HeroUnit Email Signature Template
+		.instructions
+			p Please copy & paste, if you need help you can follow
+			| 
+			a(href="https://support.google.com/mail/answer/8395?hl=es&authuser=0") gmail instructions 
+			| 
+			| to change your email signature.
+
+		.table-container#tableID
+			table(cellspacing='0', width='400', cellpadding='0', border='0', style='box-sizing:border-box;border-spacing:0px;border-collapse:collapse;color:rgb(51,51,51);font-family:Muli,sans-serif;font-size:13px')
+				tbody(style='box-sizing:border-box')
+					tr(style='box-sizing:border-box')
+						td(valign='top', width='100', style='box-sizing:border-box;padding:0px 12px 0px 0px;vertical-align:top')
+							img(alt='HeroUnit', width='100', style='box-sizing:border-box;border:0px;vertical-align:middle;width:100px;border-radius:0%; margin-top: 8px', src='https://ci4.googleusercontent.com/proxy/yts9w1jr5N5rlQGa5-rOIC32XLo1W1h2L2uvkV8SzFIdDurVXOl8DvtvDG2o2eYHJCqipohwhdo4vLH5caMq57TMuS9PNa9Off1ahyi4W7732fbsBJQ-sJj0iimNbj6Ggc5dJncGKVEhK9mOjF8k5ss=s0-d-e1-ft#https://img.mysignature.io/p/6/c/a/6cadcbf0-ccb0-5f4b-ac0e-25d2ea948d24.png?time=1539124537')
+						td(valign='top', style='box-sizing:border-box;padding:0px 0px 0px 12px;vertical-align:top;border-left:1px solid rgb(61,133,198)')
+							table(cellspacing='0', cellpadding='0', border='0', style='box-sizing:border-box;border-spacing:0px;border-collapse:collapse;background-color:transparent;line-height:1.4;font-family:Arial,Helvetica,sans-serif;color:rgb(0,0,1)')
+								tbody(style='box-sizing:border-box')
+									tr(style='box-sizing:border-box')
+										td(style='box-sizing:border-box;padding:0px')
+											span(style='box-sizing:border-box;font-weight:600;color:rgb(61,133,198)')
+												font(size='4') John Doe
+									tr(style='box-sizing:border-box')
+										td(style='box-sizing:border-box;padding:8px 0px')
+											font(color='#444444', size='2')
+												| UX Designer 
+												b | HeroUnit
+									tr(style='box-sizing:border-box')
+										td(style='box-sizing:border-box;padding:0px')
+											a(href='tel:+504%203344-5549', value='+50433445549', target='_blank', style='background-color:transparent;box-sizing:border-box; text-decoration: none; color:#999;') +504 1234 5549
+											|
+											| |
+											|
+											a(href='http://herounit.io/', style='background-color:transparent;box-sizing:border-box; text-decoration: none; color:#999;', target='_blank', data-saferedirecturl='https://www.google.com/url?q=http://herounit.io/&source=gmail&ust=1539280008860000&usg=AFQjCNGG_vIDzY3vkorm14yBwJ2ScsWI8A')
+												font(color='#444444', size='2') herounit.io
+									tr(style='box-sizing:border-box')
+										td(style='box-sizing:border-box;padding:0px')
+											br
+									tr(style='box-sizing:border-box')
+										td(style='box-sizing:border-box;padding:8px 0px 0px')
+											i(style='color:rgb(102,102,102);font-family:Verdana,Geneva,sans-serif;font-size:11.7px') Just in the nick of time!
+											br
+		.copybutton
+			input#btncopy.btn(type='button', value='Copy to clipboard', onclick="copy('#tableID')")
+	
+
+	
+	
+	script.
+		function copy(selector){
+		  var $temp = $("<div>");
+		  $("body").append($temp);
+		  $temp.attr("contenteditable", true)
+		       .html($(selector).html()).select()
+		       .on("focus", function() { document.execCommand('selectAll',false,null) })
+		       .focus();
+		  document.execCommand("copy");
+		  $temp.remove();
+		}
+
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js")
