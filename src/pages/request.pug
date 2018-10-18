@@ -4,6 +4,13 @@ include includes/header.pug
 .request-container.margin-bottom-big
 	.grid-x.grid-margin-y.grid-container
 		.cell.small-12.medium-6
+			.cognito
+				script(src='https://services.cognitoforms.com/s/sbgrmMTkokGVv9xJ-PXrDA')
+				script.
+					Cognito.load("forms", { id: "1" });
+
+			
+		//.cell.small-12.medium-6
 			h1 Request a Quote
 			p Please provide us some information below and we’ll happy to send you a quote according to your needs and timing:
 			
@@ -290,7 +297,7 @@ include includes/header.pug
 			.illu-request
 				img(src="src/img/illu-request.png")
 				.contactbox
-					h1 Questions?
+					h4 Questions?
 					p Please contact us anytime:
 					p
 						i.icon(data-feather="phone")
