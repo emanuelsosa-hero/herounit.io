@@ -1,4 +1,5 @@
 #!/bin/bash
+
 GIT_REPO_URL=$(git config --get remote.origin.url)
 
 mkdir .deploy
