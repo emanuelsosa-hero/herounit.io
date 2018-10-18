@@ -110,6 +110,12 @@ a:hover {
 }
 
 
+.top-bar {
+	.button.primary {
+		background-color: $primary-color;
+	}
+}
+
 
 .top-bar.stacked {
 	background-color: #fff !important;
