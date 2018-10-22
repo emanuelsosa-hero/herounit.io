@@ -98,6 +98,9 @@ a:hover {
 	height: 55px;
 	padding: 8px 5px;
 	}
+	.menu-icon::after {
+		display: none;
+	}
 }
 
 .menu-cont-mobile {
@@ -528,6 +531,18 @@ footer {
     top: 7px;
 	}
 }
+
+.cognito .c-dropdown:after {
+	display: none;
+}
+
+.cognito #c-submit-button {
+	font-size: 1.2em;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+
 
 // Utilities
 
