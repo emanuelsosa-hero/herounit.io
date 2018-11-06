@@ -57,7 +57,7 @@
       <div class="welcome-description">
         <p class="margin-bottom-small">Focus on your business while we focus on your software. Whether you need a full-stack development team to develop your dream from scratch, or a proactive team of experts ready to provide support and mantainance, HeroUnit is the superhero you can rely on!</p>
       </div>
-      <div class="buttongroup hide-for-small-only"><a class="button secondary" href="request.html">Request a Quote</a><a class="button clear secondary" href="#services">Learn More</a></div>
+      <div class="buttongroup hide-for-small-only"><a class="button secondary" href="request.html">Request a Quote</a><a class="button clear secondary" href="#learnmore">Learn More</a></div>
     </div>
     <div class="cell small-6 medium-6">
       <div class="welcome-graphic">
@@ -72,6 +72,7 @@
     <h4>Or Should we say Our Super Powers?</h4>
   </div>
   <div class="services-list grid-x grid-margin-y grid-margin-x">
+    <div id="learnmore"></div>
     <div class="card-service cell small-6 medium-2 text-center">
       <div class="serv-picture sp1"></div>
       <h5>24/7 Proactive Support</h5>
@@ -101,7 +102,7 @@
     <thead>
       <tr>
         <th class="head-service">Service</th>
-        <th>Basic</th>
+        <th style="width: 17%">Basic</th>
         <th>Premium</th>
         <th class="col-gold"><i class="icon icon-left" data-feather="star"></i>Gold</th>
       </tr>
@@ -112,7 +113,7 @@
           <h6>Included Credits Per Month</h6>
         </td>
         <td>40</td>
-        <td>80</td>
+        <td class="col-mid">80</td>
         <td>120</td>
       </tr>
       <tr>
@@ -120,7 +121,7 @@
           <h6>Free Ramp-U</h6>
         </td>
         <td>1 Week</td>
-        <td>1 Week</td>
+        <td class="col-mid">1 Week</td>
         <td>1 Week</td>
       </tr>
       <tr>
@@ -129,7 +130,7 @@
           <p>Emergency Response, General Coding and Bug Fixes, Technical Debt Management, Dependency Management</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -138,7 +139,7 @@
           <p>Work with 3rd Party Service Providers, Build/Deployment, Automation, Server Diagnosis/Repair, General Infrastructure and Maintenance.</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -147,7 +148,7 @@
           <p>Regression Testing, Load/Performance Testing, Functional Testing, Security/Penetration Testing, Test Automation.</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -156,7 +157,7 @@
           <p>Development Assets, Logo design/updates, Prototyping.</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -170,7 +171,7 @@
           <p>Access to Issue Management Tools, Access to Team Chat, Monthly Report of Work Done</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -179,7 +180,7 @@
           <p>Infrastructure Costs, Performance, Database Server Status, Web Server Status, 3rd Party Integration Status, Application Usage, SEO Ranking.</p>
         </td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -188,7 +189,7 @@
           <p>SEO Optimization, Ongoing Backlog Review</p>
         </td>
         <td></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -197,7 +198,7 @@
           <p>Upgrade packages for minor version updates and security patches, Increase test coverage.</p>
         </td>
         <td></td>
-        <td><i class="icon icon-red" data-feather="check"></i></td>
+        <td class="col-mid"><i class="icon icon-red" data-feather="check"></i></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -205,9 +206,9 @@
           <h6>Advisory</h6>
           <p>Monthly CTO Calls, Product Manager Calls</p>
         </td>
-        <td></td>
-        <td>2 call per month</td>
-        <td>6 call per month</td>
+        <td> </td>
+        <td class="col-mid">1 CTO Call + 1 Product Manager Call</td>
+        <td>2 CTO Calls + 2 Product Manager Call</td>
       </tr>
       <tr>
         <td class="text-left">
@@ -215,7 +216,7 @@
           <p>Domain name and hosting maintenance and renewal, Upgrades & changes to integrations, platforms, OSs and Scheduled offsite backups</p>
         </td>
         <td></td>
-        <td></td>
+        <td class="col-mid"></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -224,7 +225,7 @@
           <p>Principled Developers,,Tenacious Software Testers</p>
         </td>
         <td></td>
-        <td></td>
+        <td class="col-mid"></td>
         <td><i class="icon icon-red" data-feather="check"></i></td>
       </tr>
       <tr>
@@ -232,7 +233,7 @@
           <h6>Monthly Rate</h6>
         </td>
         <td><a id="requestlink" href="#" data-open="contactform"><i class="icon icon-left" data-feather="mail"></i>Request</a></td>
-        <td><a id="requestlink" href="#" data-open="contactform"><i class="icon icon-left" data-feather="mail"></i>Request</a></td>
+        <td class="col-mid"><a id="requestlink" href="#" data-open="contactform"><i class="icon icon-left" data-feather="mail"></i>Request</a></td>
         <td><a id="requestlink" href="#" data-open="contactform"><i class="icon icon-left" data-feather="mail"></i>Request</a></td>
       </tr>
     </tbody>
@@ -263,7 +264,7 @@
       </div>
       <div class="text-group margin-bottom-big">
         <h6 class="checked">Credit-based maintenance</h6>
-        <p>Your team will follow your lead, spending credits from your bucket each month. It’s up to you what they work on. Your credits do not roll-over, so it is to your advantage to prioritize code improvements when bug/feature load is light.</p>
+        <p>Your team will follow your lead, spending credits from your bucket each month. It’s up to you what they work on and when. One credit is the same as one hour if the team uses it during normal USA business hours. But you have the flexibility to use credits at other times as well.</p>
       </div>
       <div class="text-group margin-bottom-big">
         <h6 class="checked">Complementary Services</h6>
